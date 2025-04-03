@@ -15,10 +15,10 @@ setup(
     name="robosuite",
     packages=[package for package in find_packages() if package.startswith("robosuite")],
     install_requires=[
-        "numpy>=1.13.3",
-        "numba>=0.49.1",
+        "numpy>=1.20.0",
+        "numba>=0.52.0,<=0.53.1",
         "scipy>=1.2.3",
-        "mujoco>=3.2.3",
+        "free-mujoco-py==2.1.6",
         "mink>=0.0.5",
         "Pillow",
         "opencv-python",
